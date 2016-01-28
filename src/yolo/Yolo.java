@@ -21,10 +21,9 @@ public class Yolo {
      int u=util3.scanner.scanINT(scan);
      System.out.println(u);
         System.out.println(u);
-           System.out.println(u);
+         
               System.out.println(u);
-                 System.out.println(u);
-                 
+             
          System.out.println(u);  
         System.out.println(u);
      
