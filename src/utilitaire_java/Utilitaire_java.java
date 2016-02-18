@@ -17,8 +17,10 @@ public class Utilitaire_java {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Fenetre d=new Fenetre();
         
+        System.out.println("utilitaire_java.Uiiiitilitaire_java.main()");
+        
+        Fenetre d=new Fenetre();
     }
     
 }
