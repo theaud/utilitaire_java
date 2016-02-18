@@ -9,18 +9,18 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import util3.ComplexeBool;
 import util3.ComplexeInt;
  
 public class Fenetre extends JFrame{
- /* private Panneau pan = new Panneau();
+  private Panneau pan = new Panneau();
   private JButton[] bouton ;
   
   private JPanel container = new JPanel();
   private JLabel label = new JLabel("Choix de la forme");
   private int compteur = 0;
   private boolean animated = true;
-  private boolean backX, backY;
- 
+  
   private Thread t;  
   private JComboBox combo = new JComboBox();
   
@@ -28,7 +28,7 @@ public class Fenetre extends JFrame{
   
   public Fenetre(){
     this.setTitle("Animation");
-    this.setSize(300, 300);
+    this.setSize(500, 500);
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.setLocationRelativeTo(null);
  
@@ -66,27 +66,39 @@ public class Fenetre extends JFrame{
   }
 
   private void go(ComplexeInt size){
-    x = pan.getPosX();
-    y = pan.getPosY();
-    while(this.animated){
-      if(x < 1) backX = false;
-      if(x > pan.getWidth() - size.getRe()) backX = true;    
-      if(y < 1) backY = false;
-      if(y > pan.getHeight() - size.getIm()) backY = true;      
-      if(!backX) pan.setPosX(++x);
-      else pan.setPosX(--x);
-      if(!backY) pan.setPosY(++y);
-      else pan.setPosY(--y);
-      
-      pan.repaint();
-      try {
-        Thread.sleep(3);
-      } catch (InterruptedException e) {
-        e.printStackTrace();
-      }
-    }    
-  }
+   int  x = pan.getPosX();
+   int  y = pan.getPosY();
+   ComplexeBool back=new ComplexeBool();
+    
+
  
+     
+    while(this.animated)
+        {
+            
+           if(x < 1) back.setRe(false);
+        if(x > pan.getWidth() - size.getRe()) {back.setRe(true);} 
+        
+        if(y < 1) back.setIm(false);
+        if(y > pan.getHeight() - size.getIm()) {back.setIm(true); } 
+
+        
+        System.out.println(" = "+(pan.getWidth() - size.getRe())+"  = "+(pan.getHeight() - size.getIm()));
+        if(!back.getRe()) pan.setPosX(++x);
+        else pan.setPosX(--x);
+        if(!back.getIm()) pan.setPosY(++y);
+        else pan.setPosY(--y);
+ 
+           
+           
+          pan.repaint();
+          try {Thread.sleep(3);} catch (InterruptedException e) { e.printStackTrace();}
+        }
+    
+    
+  }
+  
+ //----------------------------------------------------------------------------------------------------------------------------------------
   //Classe écoutant notre bouton
   public class BoutonListener implements ActionListener{
      public void actionPerformed(ActionEvent arg0) {
@@ -119,5 +131,5 @@ public class Fenetre extends JFrame{
       //Il faut donc utiliser la méthode toString() pour retourner un String (ou utiliser un cast)
       pan.setForme(combo.getSelectedItem().toString());
     }  
-  }   */ 
+  }   
 }
