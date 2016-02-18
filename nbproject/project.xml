@@ -1,9 +1,27 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.php.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/php-project/1">
+            <name>PhpProject1</name>
+        </data>
+    </configuration>
+</project>
+=======
+>>>>>>> 586737063d87c69e6bfe7907b12f98926d62c898
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://www.netbeans.org/ns/project/1">
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
+<<<<<<< HEAD
             <name>utilitaire_java</name>
+=======
+            <name>utilitaire</name>
+>>>>>>> 586737063d87c69e6bfe7907b12f98926d62c898
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>
@@ -13,3 +31,7 @@
         </data>
     </configuration>
 </project>
+<<<<<<< HEAD
+=======
+>>>>>>> b6ca62d5c2c1cd87303e5b00284c322aa5b83ea6
+>>>>>>> 586737063d87c69e6bfe7907b12f98926d62c898

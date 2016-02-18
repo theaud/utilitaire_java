@@ -1,6 +1,4 @@
-/*
 
- */
 package util3;
 import java.util.*;
 
