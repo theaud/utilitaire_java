@@ -18,7 +18,7 @@ public class Utilitaire_java {
      */
     public static void main(String[] args) {
         
-        System.out.println("utilitaire_java.Uiiiitilitaire_java.main()");
+        System.out.println("utilitaire_jggava.Uiiiitilitaire_java.main()");
         
         Fenetre d=new Fenetre();
     }
