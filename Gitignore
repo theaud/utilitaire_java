@@ -1,0 +1,8 @@
+@@ -246,7 +246,6 @@ _Pvt_Extensions
+  # Executables
+  *.exe
+  *.out
+ -/CMakeLists.txt
+  *.app
+  *.i*86
+  *.x86_64
